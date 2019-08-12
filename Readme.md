@@ -8,7 +8,7 @@ Share files in the local network using MDNS for peer discovery.
 ### Share
 `echo Hello World | sling -remote=alice` on one machine. Then on another machine in the same network run `sling -uid=alice > hello.txt`
 
-Sling uses MDNS to discover peers in the local network. A sharing peer will read from `stdin` and a receiving peer will write to `stdin` allowing you to hook up the input/output to any other program you need. 
+Sling uses MDNS to discover peers in the local network. A sharing peer will read from `stdin` and a receiving peer will write to `stdout` allowing you to hook up the input/output to any other program you need. 
 
 #### Command Options
 
